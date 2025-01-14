@@ -4,9 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="text-xl">hello world</h1>
+    <nav id="navbar" class="bg-slate-400">
+      <ul id="nav-list">
+        <li class="home"><a href="#">Home</a></li>
+        <div class="search-input-group">
+          <form id="search-form" action="/search" method="GET">
+            <input
+              type="search"
+              name="q"
+              placeholder="Cari sesuatu..."
+              aria-label="Search"
+            />
+            <button type="submit">Cari</button>
+          </form>
+        </div>
+        <li><a href="#">about</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">contact</a></li>
+        <!-- Form pencarian ditambahkan sebagai item terakhir dalam list -->
+      </ul>
+    </nav>
   </body>
 </html>
