@@ -4,13 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar" class="bg-slate-400">
-      <ul id="nav-list">
-        <li class="home"><a href="#">Home</a></li>
+    <nav id="navbar" class="bg-slate-100 p-3">
+      <ul class="nav-list">
+        <div
+          class="home-logo"
+        >
+          <a" href="#"><img src="hbo.png" alt=""></a>
+        </div>
         <div class="search-input-group">
           <form id="search-form" action="/search" method="GET">
             <input
@@ -19,13 +26,18 @@
               placeholder="Cari sesuatu..."
               aria-label="Search"
             />
-            <button type="submit">Cari</button>
+            <button type="submit" class="fa fa-search w3-large"></button>
           </form>
         </div>
-        <li><a href="#">about</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">contact</a></li>
-        <!-- Form pencarian ditambahkan sebagai item terakhir dalam list -->
+        <!-- Tambahkan div untuk mengelompokkan menu -->
+        <div class="nav-menu text-slate-100">
+          <li><a href="#">about</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">contact</a></li>
+        </div>
+        <div class="login  text-lime-900 font-bol bg-gray-200 p-1 rounded-md">
+          <a class="mr-2-4" href="#">Login</a>
+        </div>
       </ul>
     </nav>
   </body>

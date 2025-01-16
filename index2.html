@@ -3,13 +3,160 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+    font-family: "times new roman", sans-serif;
+    background-color: #FBF5DD;
+  }
+
+
+  #navbar {
+  margin-top: 0.5rem;
+  height: 3rem; /* Nilai tetap, sesuaikan sesuai kebutuhan */
+  overflow: hidden; /* Mencegah konten meluap */
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70%; /* Mengisi tinggi navbar */
+  position: relative;
+}
+
+  /* .nav-list {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  /* min-height: 60px; Tetapkan tinggi minimum navbar */
+  /* position: relative;
+} */
+
+
+  .home-logo {
+  width: 3rem; /* Sesuaikan ukuran sesuai kebutuhan */
+  flex-shrink: 0; /* Mencegah logo dari mengecil */
+  
+}
+
+.home-logo img {
+  transform: scale(1);
+  width: 100%; /* Membuat gambar mengisi container */
+  height: auto; /* Menjaga aspect ratio */
+  display: block; /* Menghilangkan space ekstra di bawah gambar */
+}
+  /* Form pencarian */
+  /* .search-input-group {
+    position: absolute;
+    left: 100px; 
+  } */
+
+  /* Menu navigasi */
+  .nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: #16404D;
+  width: 50%; /* Mengubah width menjadi 50% */
+  margin: 0 auto; /* Memberikan margin auto untuk center */
+  padding: 1px 1rem; 
+  border-radius: 25px;
+}
+
+/* Hapus background dari li */
+.nav-menu li {
+  padding: 0.5rem 0.5rem;
+}
+
+
+/* start */
+.nav-menu li a {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-menu li a::before,
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a::after {
+  top: -7px;  /* Menggeser ke atas */
+  left: -7px; /* Menggeser ke kiri */
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.nav-menu li a::before {
+  right: -7px;  /* Menggeser ke kanan */
+  bottom: -7px; /* Menggeser ke bawah */
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.nav-menu li a:hover::before,
+.nav-menu li a:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: #FBF5DD; /* Menggunakan warna yang sama dengan hover text */
+}
+/* end */
+
+  /* .search-input-group input {
+    border-radius: 4px; 
+    padding: 5px;
+    margin-right: -1.9rem;
+  } */
+
+  .search-input-group button {
+    margin-right: 1rem;
+    border-radius: 4px; /* Corrected property name */
+  }
+
+    </style>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
   </head>
   <body>
-    <form action="">
-      <ul>
-        <li>hello world</li>
+    <nav id="navbar" class=" p-3">
+      <ul class="nav-list">
+        <div
+          class="home-logo ml-2"
+        >
+          <a" href="#"><img src="hbo.png" alt=""></a>
+        </div>
+        <!-- Tambahkan div untuk mengelompokkan menu -->
+        <div class="nav-menu text-slate-100">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+        <div class="search-input-group">
+          <form id="search-form" action="/search" method="GET">
+            <!-- <input
+              type="search"
+              name="q"
+              placeholder="Cari sesuatu..."
+              aria-label="Search"
+            /> -->
+            <button type="submit" class="fa fa-search w3-large" style="color:#16404D""></button>
+          </form>
+        </div>
+        <div class="login mr-2 ">
+          <a class="fa fa-shopping-cart"  style="font-size:24px; color:#16404D"href="#"></a>
+        </div>
       </ul>
-    </form>
+    </nav>
   </body>
 </html>
