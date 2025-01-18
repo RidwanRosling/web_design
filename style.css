@@ -1,41 +1,117 @@
 body {
   font-family: "times new roman", sans-serif;
+  background-color: #fbf5dd;
+}
+
+#navbar {
+  margin-top: 0.5rem;
+  height: 3.6rem;
+  overflow: hidden;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 70%;
   position: relative;
-  gap: 2rem; /* Tambahkan gap untuk spacing yang lebih baik */
 }
+
+/* .nav-list {
+display: flex;
+align-items: center;
+overflow: hidden;
+width: 100%;
+/* min-height: 60px; Tetapkan tinggi minimum navbar */
+/* position: relative;
+} */
 
 .home-logo {
-  width: 50px;
+  width: 3rem;
+  flex-shrink: 0;
 }
 
-/* Form pencarian */
-.search-input-group {
-  position: absolute;
-  left: 100px; /* Sesuaikan dengan kebutuhan */
+.home-logo img {
+  transform: scale(1);
+  width: 100%; /* Membuat gambar mengisi container */
+  height: auto; /* Menjaga aspect ratio */
+  display: block; /* Menghilangkan space ekstra di bawah gambar */
 }
+/* Form pencarian */
+/* .search-input-group {
+  position: absolute;
+  left: 100px; 
+} */
 
 /* Menu navigasi */
 .nav-menu {
+  border: 1px solid #red;
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  width: 100%; /* Gunakan full width */
-  margin-left: 0; /* Hapus margin auto */
-  font-weight: bold;
+  gap: 1rem;
+  background-color: #16404d;
+  width: 30%; /* Mengubah width menjadi 50% */
+  margin: 0 auto; /* Memberikan margin auto untuk center */
+  padding: 3px 1rem;
+  border-radius: 25px;
+  /* Tambahan property untuk membuat nav-menu lebih responsif */
+  min-width: fit-content; /* Memastikan lebar minimal sesuai konten */
+  flex-wrap: nowrap; /* Mencegah wrapping pada item */
+  overflow: hidden; /* Mencegah konten keluar */
 }
 
-.search-input-group input {
-  border-radius: 4px; /* Corrected property name */
+.nav-menu li {
+  padding: 0.5rem 0.5rem;
+  white-space: nowrap; /* Mencegah text wrapping */
+  flex-shrink: 0; /* Mencegah item mengecil */
+}
+
+/* start */
+.nav-menu li a {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-menu li a::before,
+.nav-menu li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border: 0px solid transparent;
+  width: 0%;
+  height: 0%;
+  transition: all 0.3s ease;
+}
+
+.nav-menu li a::after {
+  top: -7px;
+  left: -7px;
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+.nav-menu li a::before {
+  right: -7px;
+  bottom: -7px;
+  border-bottom: 2px solid transparent;
+  border-right: 2px solid transparent;
+}
+
+.nav-menu li a:hover::before,
+.nav-menu li a:hover::after {
+  width: 10px;
+  height: 10px;
+  border-color: #fbf5dd;
+}
+/* end */
+
+/* .search-input-group input {
+  border-radius: 4px; 
   padding: 5px;
   margin-right: -1.9rem;
-}
+} */
 
 .search-input-group button {
+  margin-right: 1rem;
   border-radius: 4px; /* Corrected property name */
 }

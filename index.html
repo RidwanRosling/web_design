@@ -11,34 +11,39 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar" class="bg-slate-100 p-3">
+    <nav id="navbar" class=" p-3">
       <ul class="nav-list">
         <div
-          class="home-logo"
+          class="home-logo ml-2"
         >
-          <a" href="#"><img src="hbo.png" alt=""></a>
+          <a" href="#"><a href=""><img src="starbucks (2).png" alt=""></a></a>
+        </div>
+        <!-- Tambahkan div untuk mengelompokkan menu -->
+        <div class="nav-menu text-slate-100">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Contact</a></li>
         </div>
         <div class="search-input-group">
           <form id="search-form" action="/search" method="GET">
-            <input
+            <!-- <input
               type="search"
               name="q"
               placeholder="Cari sesuatu..."
               aria-label="Search"
-            />
-            <button type="submit" class="fa fa-search w3-large"></button>
+            /> -->
+            <button type="submit" class="fa fa-search w3-large" style="color:#16404D""></button>
           </form>
         </div>
-        <!-- Tambahkan div untuk mengelompokkan menu -->
-        <div class="nav-menu text-slate-100">
-          <li><a href="#">about</a></li>
-          <li><a href="#">Categories</a></li>
-          <li><a href="#">contact</a></li>
-        </div>
-        <div class="login  text-lime-900 font-bol bg-gray-200 p-1 rounded-md">
-          <a class="mr-2-4" href="#">Login</a>
+        <div class="login mr-2 ">
+          <a class="fa fa-shopping-cart"  style="font-size:24px; color:#16404D"href="#"></a>
         </div>
       </ul>
     </nav>
+
+    <section class="bento-box">
+      <div class="container"></div>
+    </section>
   </body>
 </html>
