@@ -5,7 +5,7 @@ body {
 
 #navbar {
   margin-top: 0.5rem;
-  height: 3.6rem;
+  height: 55px;
   overflow: hidden;
 }
 
@@ -27,12 +27,13 @@ width: 100%;
 } */
 
 .home-logo {
-  width: 3rem;
+  margin-left: 4rem;
+  width: 4rem;
   flex-shrink: 0;
 }
 
 .home-logo img {
-  transform: scale(1);
+  transform: scale(1.5);
   width: 100%; /* Membuat gambar mengisi container */
   height: auto; /* Menjaga aspect ratio */
   display: block; /* Menghilangkan space ekstra di bawah gambar */
@@ -45,11 +46,14 @@ width: 100%;
 
 /* Menu navigasi */
 .nav-menu {
-  border: 1px solid #red;
   display: flex;
   justify-content: center;
+  align-items: center;
+  /* box shadow */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* box shadow end */
   gap: 1rem;
-  background-color: #16404d;
+  background-color: #3e220c;
   width: 30%; /* Mengubah width menjadi 50% */
   margin: 0 auto; /* Memberikan margin auto untuk center */
   padding: 3px 1rem;
@@ -61,12 +65,12 @@ width: 100%;
 }
 
 .nav-menu li {
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   white-space: nowrap; /* Mencegah text wrapping */
   flex-shrink: 0; /* Mencegah item mengecil */
 }
 
-/* start */
+/* hover animation START */
 .nav-menu li a {
   position: relative;
   display: inline-block;
@@ -84,15 +88,15 @@ width: 100%;
 }
 
 .nav-menu li a::after {
-  top: -7px;
-  left: -7px;
+  top: -3px;
+  left: -4px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
 }
 
 .nav-menu li a::before {
-  right: -7px;
-  bottom: -7px;
+  right: -4px;
+  bottom: -3px;
   border-bottom: 2px solid transparent;
   border-right: 2px solid transparent;
 }
@@ -102,6 +106,11 @@ width: 100%;
   width: 10px;
   height: 10px;
   border-color: #fbf5dd;
+}
+
+.shoping-cart {
+  margin-right: 4rem;
+  flex-shrink: 0;
 }
 /* end */
 
@@ -113,5 +122,65 @@ width: 100%;
 
 .search-input-group button {
   margin-right: 1rem;
-  border-radius: 4px; /* Corrected property name */
+  border-radius: 4px;
+}
+
+.bento-box {
+  min-height: 30vh; /* Membuat section setinggi viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center secara vertical */
+}
+
+.bento-box .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Mengatur lebar container */
+  max-width: 1200px; /* Membatasi lebar maksimal */
+  margin-top: 2rem;
+  /* padding: 2rem; */
+  text-align: center;
+}
+
+.container h4 {
+  margin-bottom: 1px;
+}
+
+.container h1 {
+  margin-top: 0;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.btn-explore a {
+  color: #fff;
+  padding: 0.5rem 0.4rem;
+  background-color: black;
+  border-radius: 4px;
+}
+
+/* Coffee Gallery */
+/* Membatasi lebar galeri */
+.coffee-gallery {
+  max-width: 1200px; /* Batas maksimum lebar */
+  margin: 0 auto; /* Agar terpusat */
+  height: 300px; /* Tetap menjaga tinggi */
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Tetap 5 kolom */
+  gap: 10px;
+  padding: 0 20px; /* Tambahkan padding kiri dan kanan */
+}
+
+.gallery-item {
+  overflow: hidden; /* Menyembunyikan bagian gambar yang kelebihan */
+  height: 100%; /* Menjaga proporsi tinggi */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px; /* Opsional, untuk menambahkan efek sudut melengkung */
 }

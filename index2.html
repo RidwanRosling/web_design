@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-    font-family: "times new roman", sans-serif;
-    background-color: #FBF5DD;
-  }
+       body {
+  font-family: "times new roman", sans-serif;
+  background-color: #fbf5dd;
+}
 
-
-  #navbar {
+#navbar {
   margin-top: 0.5rem;
-  height: 3.6rem;
+  height: 55px;
   overflow: hidden;
 }
 
@@ -25,52 +24,59 @@
   position: relative;
 }
 
-  /* .nav-list {
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  /* min-height: 60px; Tetapkan tinggi minimum navbar */
-  /* position: relative;
+/* .nav-list {
+display: flex;
+align-items: center;
+overflow: hidden;
+width: 100%;
+/* min-height: 60px; Tetapkan tinggi minimum navbar */
+/* position: relative;
 } */
 
-
-  .home-logo {
-  width: 3rem; 
+.home-logo {
+  margin-left: 4rem;
+  width: 4rem;
   flex-shrink: 0;
-  
 }
 
 .home-logo img {
-  transform: scale(1);
+  transform: scale(1.5);
   width: 100%; /* Membuat gambar mengisi container */
   height: auto; /* Menjaga aspect ratio */
   display: block; /* Menghilangkan space ekstra di bawah gambar */
 }
-  /* Form pencarian */
-  /* .search-input-group {
-    position: absolute;
-    left: 100px; 
-  } */
+/* Form pencarian */
+/* .search-input-group {
+  position: absolute;
+  left: 100px; 
+} */
 
-  /* Menu navigasi */
-  .nav-menu {
+/* Menu navigasi */
+.nav-menu {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  background-color: #16404D;
-  width: 30%; /* Mengubah width menjadi 50% */
+  /* box shadow */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  /* box shadow end */
+  gap: 1rem;
+  background-color: #16404d;
+  width: 25%; /* Mengubah width menjadi 50% */
   margin: 0 auto; /* Memberikan margin auto untuk center */
-  padding: 3px 1rem; 
+  padding: 3px 1rem;
   border-radius: 25px;
+  /* Tambahan property untuk membuat nav-menu lebih responsif */
+  min-width: fit-content; /* Memastikan lebar minimal sesuai konten */
+  flex-wrap: nowrap; /* Mencegah wrapping pada item */
+  overflow: hidden; /* Mencegah konten keluar */
 }
 
 .nav-menu li {
-  padding: 0.5rem 0.5rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap; /* Mencegah text wrapping */
+  flex-shrink: 0; /* Mencegah item mengecil */
 }
 
-
-/* start */
+/* hover animation START */
 .nav-menu li a {
   position: relative;
   display: inline-block;
@@ -88,15 +94,15 @@
 }
 
 .nav-menu li a::after {
-  top: -7px; 
-  left: -7px;
+  top: -3px;
+  left: -4px;
   border-top: 2px solid transparent;
   border-left: 2px solid transparent;
 }
 
 .nav-menu li a::before {
-  right: -7px; 
-  bottom: -7px; 
+  right: -4px;
+  bottom: -3px;
   border-bottom: 2px solid transparent;
   border-right: 2px solid transparent;
 }
@@ -105,20 +111,25 @@
 .nav-menu li a:hover::after {
   width: 10px;
   height: 10px;
-  border-color: #FBF5DD;
+  border-color: #fbf5dd;
+}
+
+.shoping-cart {
+  margin-right: 4rem;
+  flex-shrink: 0;
 }
 /* end */
 
-  /* .search-input-group input {
-    border-radius: 4px; 
-    padding: 5px;
-    margin-right: -1.9rem;
-  } */
+/* .search-input-group input {
+  border-radius: 4px; 
+  padding: 5px;
+  margin-right: -1.9rem;
+} */
 
-  .search-input-group button {
-    margin-right: 1rem;
-    border-radius: 4px; /* Corrected property name */
-  }
+.search-input-group button {
+  margin-right: 1rem;
+  border-radius: 4px; /* Corrected property name */
+}
 
     </style>
     <!-- <link rel="stylesheet" href="style.css" /> -->
@@ -132,13 +143,13 @@
         <div
           class="home-logo ml-2"
         >
-          <a" href="#"><a href=""><img src="starbucks (2).png" alt=""></a></a>
+          <a" href="#"><a href=""><img src="/img/Secondary Logo.png" alt=""></a></a>
         </div>
         <!-- Tambahkan div untuk mengelompokkan menu -->
         <div class="nav-menu text-slate-100">
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
-          <li><a href="#">Categories</a></li>
+          <li><a href="#">Menu</a></li>
           <li><a href="#">Contact</a></li>
         </div>
         <div class="search-input-group">
@@ -152,14 +163,16 @@
             <button type="submit" class="fa fa-search w3-large" style="color:#16404D""></button>
           </form>
         </div>
-        <div class="login mr-2 ">
+        <div class="shoping-cart">
           <a class="fa fa-shopping-cart"  style="font-size:24px; color:#16404D"href="#"></a>
         </div>
       </ul>
     </nav>
 
     <section class="bento-box">
-      <div class="container"></div>
+      <div class="container">
+        <h1>WELCOME</h1>
+      </div>
     </section>
   </body>
 </html>
