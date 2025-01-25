@@ -1,10 +1,20 @@
 body {
-  font-family: "times new roman", sans-serif;
-  background-color: #fbf5dd;
+  font-family: "gloria hallelujah", cursive;
+  /* background-color: #fbf5dd; */
+}
+
+header {
+  height: 100vh;
+  background-color: #cba35c;
 }
 
 #navbar {
-  margin-top: 0.5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  padding-top: 1rem;
   height: 55px;
   overflow: hidden;
 }
@@ -156,13 +166,12 @@ width: 100%;
 
 .btn-explore a {
   color: #fff;
-  padding: 0.5rem 0.4rem;
-  background-color: black;
+  background-color: #3e220c;
+  padding: 0.5rem 0.6rem;
   border-radius: 4px;
 }
 
 /* Coffee Gallery */
-/* Membatasi lebar galeri */
 .coffee-gallery {
   max-width: 1200px; /* Batas maksimum lebar */
   margin: 0 auto; /* Agar terpusat */
@@ -182,5 +191,53 @@ width: 100%;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px; /* Opsional, untuk menambahkan efek sudut melengkung */
+  border-radius: 8px;
 }
+
+/* menu section start*/
+.menu {
+  width: 100%;
+  height: 100vh;
+  /* padding: 1em; */
+  display: flex;
+}
+
+.foto-product {
+  display: flex;
+  flex: 1;
+}
+
+.products {
+  /* padding-top: 1em; */
+
+  background-color: #fce7c8;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  /* width: 600px;
+  height: 700px; */
+}
+
+.coffee-menu {
+  margin-top: 5em;
+  width: 80%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* border: 2px solid yellow; */
+  /* justify-content: space-between; */
+}
+
+.product {
+  width: 10rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid black;
+  /* padding-top: 2em; */
+}
+
+.kopikala {
+}
+
+/* menu section end */

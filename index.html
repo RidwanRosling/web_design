@@ -14,97 +14,115 @@
     <title>Document</title>
   </head>
   <body>
-    <nav id="navbar" class="p-3">
-      <ul class="nav-list">
-        <div class="home-logo">
-          <a href="#"
-            ><img src="/img/Secondary Logo.png" alt="Logo Kopikala"
-          /></a>
-        </div>
-        <!-- Tambahkan div untuk mengelompokkan menu -->
-        <div class="nav-menu text-slate-100">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">Contact</a></li>
-        </div>
-        <div class="search-input-group">
-          <form id="search-form" action="/search" method="GET">
-            <!-- <input
-              type="search"
-              name="q"
-              placeholder="Cari sesuatu..."
-              aria-label="Search"
-            /> -->
-            <button
-              type="submit"
-              class="fa fa-search w3-large"
-              style="color: #3e220c"
-            ></button>
-          </form>
-        </div>
-        <div class="shoping-cart">
-          <a
-            class="fa fa-shopping-cart"
-            style="font-size: 24px; color: #3e220c"
-            href="#"
-          ></a>
-        </div>
-      </ul>
-    </nav>
+    <header>
+      <nav id="navbar" class="p-3">
+        <ul class="nav-list">
+          <div class="home-logo">
+            <a href="#"
+              ><img src="/img/SecondaryLogo.png" alt="Logo Kopikala"
+            /></a>
+          </div>
+          <!-- Tambahkan div untuk mengelompokkan menu -->
+          <div class="nav-menu text-slate-100">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </div>
+          <div class="search-input-group">
+            <form id="search-form" action="/search" method="GET">
+              <!-- <input
+                type="search"
+                name="q"
+                placeholder="Cari sesuatu..."
+                aria-label="Search"
+              /> -->
+              <button
+                type="submit"
+                class="fa fa-search w3-large"
+                style="color: #3e220c"
+              ></button>
+            </form>
+          </div>
+          <div class="shoping-cart">
+            <a
+              class="fa fa-shopping-cart"
+              style="font-size: 24px; color: #3e220c"
+              href="#"
+            ></a>
+          </div>
+        </ul>
+      </nav>
 
-    <section class="bento-box mb-10">
-      <div class="container">
-        <h4 class="text-sm font-semibold">BEST PLACE TO BUY COFEE</h4>
-        <h1>Welcome To Kopikala</h1>
-        <p class="mb-2">
-          Lorem ipsum is simply dummy text of the printing and <br />typesetting
-          industry.
-        </p>
-        <div class="btn-explore">
-          <a href="#">Explore Our Products</a>
+      <section class="bento-box mb-10 pt-10">
+        <div class="container">
+          <h4 class="text-sm font-semibold">BEST PLACE TO BUY COFFEE</h4>
+          <h1>Welcome To Kopikala</h1>
+          <p class="mb-4">
+            Lorem ipsum is simply dummy text of the printing and
+            <br />typesetting industry.
+          </p>
+          <div class="btn-explore">
+            <a href="#">Explore Our Products</a>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="coffee-gallery grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 h-[300px]"
+      >
+        <div class="gallery-item">
+          <img
+            src="img/img1.jpeg"
+            alt="Coffee Beans 1"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/img2.jpg"
+            alt="Coffee Beans 2"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/img3.jpg"
+            alt="Coffee Beans 3"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/img4.png"
+            alt="Coffee Beans 4"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="gallery-item">
+          <img
+            src="img/img5.png"
+            alt="Coffee Beans 5"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </section>
+    </header>
+
+    <!-- menu section start -->
+    <section class="menu">
+      <div class="foto-product">
+        <h1>Hello World</h1>
+      </div>
+      <div class="products">
+        <div class="coffee-menu py-8 text-lg font-bold">
+          <div class="product kopikala text-black">Kopi kala</div>
+          <div class="product susu-aren text-black">susu aren</div>
+          <div class="product kopi-susu text-black">kopi susu</div>
+          <div class="product susu-pisang text-black">susu pisang</div>
         </div>
       </div>
     </section>
-
-    <section
-      class="coffee-gallery grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 h-[300px]"
-    >
-      <div class="gallery-item">
-        <img
-          src="img/img1.jpeg"
-          alt="Coffee Beans 1"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="gallery-item">
-        <img
-          src="img/img2.jpg"
-          alt="Coffee Beans 2"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="gallery-item">
-        <img
-          src="img/img3.jpg"
-          alt="Coffee Beans 3"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="gallery-item">
-        <img
-          src="img/img4.png"
-          alt="Coffee Beans 4"
-          class="w-full h-full object-cover"
-        />
-      </div>
-      <div class="gallery-item">
-        <img
-          src="img/img5.png"
-          alt="Coffee Beans 5"
-          class="w-full h-full object-cover"
-        />
-      </div>
-    </section>
+    <!-- menu section end -->
   </body>
 </html>

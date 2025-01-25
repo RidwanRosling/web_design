@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* how to make items in body in center without using grid and felxbox */
+      body {
+        margin: 30px;
+      }
+
+      .container {
+        width: 600px;
+        background-color: red;
+        /* how to make border solid black */
+        border: 5px solid black;
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        grid-template-columns: 100px 100px 100px 100px 100px 100px;
+      }
+
+      /* how to make items background color blur? */
+      .items {
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+      }
+
+      .item-1 {
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 7;
+      }
+
+      .item-2 {
+        /* shortcut */
+        grid-row: -2/5; /* grid-row-start: 4; grid-row-end: 6; */
+        grid-column: -4/-6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="items item-1">1</div>
+      <div class="items item-2">2</div>
+      <div class="items item-3">3</div>
+    </div>
+  </body>
+</html>
