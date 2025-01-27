@@ -236,7 +236,7 @@ width: 100%;
   display: grid;
   grid-template-rows: 130px 80px 80px 80px 80px;
   gap: 1em;
-  letter-spacing: 0.2em; /* Menambah jarak antar huruf sedikit */
+  letter-spacing: 0.3rem; /* Menambah jarak antar huruf sedikit */
 }
 
 .product {

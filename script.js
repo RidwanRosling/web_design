@@ -11,13 +11,13 @@ product.forEach((item) => {
     item.classList.add("bg-orange-300");
 
     if (item.classList.contains("kopikala")) {
-      fotoProduct.src = "/img/delicious-coffee-beans.jpg";
+      fotoProduct.src = "/img/kopikala.png";
     } else if (item.classList.contains("susu-aren")) {
-      fotoProduct.src = "/img/img2.jpg";
+      fotoProduct.src = "/img/susuAren.png";
     } else if (item.classList.contains("kopi-susu")) {
-      fotoProduct.src = "/img/kopi-susu.jpg";
+      fotoProduct.src = "/img/kopiSusu.png";
     } else if (item.classList.contains("susu-pisang")) {
-      fotoProduct.src = "/img/susu-pisang.jpg";
+      fotoProduct.src = "/img/susuPisang.png";
     }
   });
 });
