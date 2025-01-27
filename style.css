@@ -1,5 +1,6 @@
 body {
-  font-family: "gloria hallelujah", cursive;
+  font-family: "Gloria Hallelujah", cursive;
+  box-sizing: border-box;
   /* background-color: #fbf5dd; */
 }
 
@@ -76,10 +77,9 @@ width: 100%;
 
 .nav-menu li {
   padding: 0.2rem 0.5rem;
-  white-space: nowrap; /* Mencegah text wrapping */
-  flex-shrink: 0; /* Mencegah item mengecil */
+  white-space: nowrap;
+  flex-shrink: 0;
 }
-
 /* hover animation START */
 .nav-menu li a {
   position: relative;
@@ -136,10 +136,10 @@ width: 100%;
 }
 
 .bento-box {
-  min-height: 30vh; /* Membuat section setinggi viewport */
+  min-height: 30vh;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center secara vertical */
+  align-items: center;
 }
 
 .bento-box .container {
@@ -196,6 +196,8 @@ width: 100%;
 
 /* menu section start*/
 .menu {
+  font-family: "Gloria Hallelujah", cursive !important;
+
   width: 100%;
   height: 100vh;
   /* padding: 1em; */
@@ -207,37 +209,41 @@ width: 100%;
   flex: 1;
 }
 
+.foto-product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Atau 'contain' jika ingin mempertahankan rasio */
+  margin: 0;
+  padding: 0;
+  display: block; /* Menghapus space bawaan inline-block pada gambar */
+}
+
 .products {
   /* padding-top: 1em; */
 
-  background-color: #fce7c8;
+  background-color: #6e260e;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex: 1;
+  padding-left: 3em;
+  padding-top: 1.5em;
   /* width: 600px;
   height: 700px; */
 }
 
 .coffee-menu {
-  margin-top: 5em;
-  width: 80%;
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  /* border: 2px solid yellow; */
-  /* justify-content: space-between; */
+  /* margin-top: 2em; */
+  display: grid;
+  grid-template-rows: 130px 80px 80px 80px 80px;
+  gap: 1em;
+  letter-spacing: 0.2em; /* Menambah jarak antar huruf sedikit */
 }
 
 .product {
-  width: 10rem;
-  display: grid;
-  place-items: center;
-  border: 1px solid black;
-  /* padding-top: 2em; */
-}
-
-.kopikala {
+  width: 100%;
+  padding-right: 3em;
+  position: relative;
+  overflow: hidden;
 }
 
 /* menu section end */
