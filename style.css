@@ -1,12 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Gloria Hallelujah", cursive;
-  box-sizing: border-box;
   /* background-color: #fbf5dd; */
 }
 
 header {
   height: 100vh;
-  background-color: #cba35c;
 }
 
 #navbar {
@@ -65,7 +69,7 @@ width: 100%;
   /* box shadow end */
   gap: 1rem;
   background-color: #3e220c;
-  width: 30%; /* Mengubah width menjadi 50% */
+  width: 20%; /* Mengubah width menjadi 50% */
   margin: 0 auto; /* Memberikan margin auto untuk center */
   padding: 3px 1rem;
   border-radius: 25px;
@@ -135,68 +139,78 @@ width: 100%;
   border-radius: 4px;
 }
 
-.bento-box {
-  min-height: 30vh;
+/* landing page start */
+main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  /* justify-content: center;
+  align-items: center; */
 }
 
-.bento-box .container {
+.landing-img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: url("img/IMG_2158.JPG") center/cover no-repeat;
+}
+
+.landing-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(139, 69, 19, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 5rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+/* landing page end */
+
+/* about us start */
+/* Style untuk section about us */
+#about {
+  width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 100%; /* Mengatur lebar container */
-  max-width: 1200px; /* Membatasi lebar maksimal */
-  margin-top: 2rem;
-  /* padding: 2rem; */
+  background-color: #f4e7d1;
+  padding: 4rem 0;
+}
+
+article {
+  width: 100%;
+  max-width: 1080px;
   text-align: center;
 }
 
-.container h4 {
-  margin-bottom: 1px;
+/* Style untuk paragraf */
+article p {
+  display: inline;
+  font-size: 1.2rem;
+  font-family: "Patrick Hand", cursive;
+  line-height: 1.8;
+  letter-spacing: 2px;
+  color: #5a4632;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
-.container h1 {
-  margin-top: 0;
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.btn-explore a {
-  color: #fff;
-  background-color: #3e220c;
-  padding: 0.5rem 0.6rem;
-  border-radius: 4px;
-}
-
-/* Coffee Gallery */
-.coffee-gallery {
-  max-width: 1200px; /* Batas maksimum lebar */
-  margin: 0 auto; /* Agar terpusat */
-  height: 300px; /* Tetap menjaga tinggi */
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* Tetap 5 kolom */
-  gap: 10px;
-  padding: 0 20px; /* Tambahkan padding kiri dan kanan */
-}
-
-.gallery-item {
-  overflow: hidden; /* Menyembunyikan bagian gambar yang kelebihan */
-  height: 100%; /* Menjaga proporsi tinggi */
-}
-
-.gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
+/* about us end */
 
 /* menu section start*/
 .menu {
-  font-family: "Gloria Hallelujah", cursive !important;
+  font-family: "Gloria Hallelujah", cursive;
 
   width: 100%;
   height: 100vh;
@@ -221,7 +235,7 @@ width: 100%;
 .products {
   /* padding-top: 1em; */
 
-  background-color: #6e260e;
+  background-color: #331702;
   display: flex;
   justify-content: start;
   flex: 1;
@@ -236,7 +250,7 @@ width: 100%;
   display: grid;
   grid-template-rows: 130px 80px 80px 80px 80px;
   gap: 1em;
-  letter-spacing: 0.3rem; /* Menambah jarak antar huruf sedikit */
+  letter-spacing: 0.3rem;
 }
 
 .product {
@@ -247,3 +261,116 @@ width: 100%;
 }
 
 /* menu section end */
+
+/* responsive desgin */
+/* iPad (768px-1024px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 4rem;
+  }
+
+  .nav-menu {
+    width: 35%;
+  }
+
+  .coffee-menu {
+    grid-template-rows: repeat(5, auto);
+  }
+
+  .menu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .products {
+    padding: 2em 1em;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  #navbar {
+    padding-top: 0.5rem;
+    height: auto;
+  }
+
+  .nav-list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .home-logo {
+    margin-left: 0;
+    order: 1;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    order: 4;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .search-input-group {
+    order: 2;
+  }
+
+  .shoping-cart {
+    margin-right: 0;
+    order: 3;
+  }
+
+  .landing-img::before {
+    backdrop-filter: blur(2px);
+  }
+
+  .coffee-menu {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .coffee-menu h2 {
+    font-size: 3rem;
+  }
+
+  .product {
+    font-size: 1.5rem;
+    padding-right: 1em;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .foto-product {
+    height: 300px;
+  }
+}
+
+/* Hamburger Menu (Mobile Only) */
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hamburger {
+    display: block;
+    order: 4;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+/* responsive design end */

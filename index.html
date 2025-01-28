@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              customBrown: "#331702",
+              lightBrown: "#E6E0D4",
+            },
+          },
+        },
+      };
+    </script>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap"
       rel="stylesheet"
@@ -30,7 +43,7 @@
           <!-- Tambahkan div untuk mengelompokkan menu -->
           <div class="nav-menu text-slate-100">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#about">About</a></li>
             <li><a href="#menu">Menu</a></li>
             <li><a href="#">Contact</a></li>
           </div>
@@ -45,74 +58,49 @@
               <button
                 type="submit"
                 class="fa fa-search w3-large"
-                style="color: #3e220c"
+                style="color: white"
               ></button>
             </form>
           </div>
           <div class="shoping-cart">
             <a
               class="fa fa-shopping-cart"
-              style="font-size: 24px; color: #3e220c"
+              style="font-size: 24px; color: white"
               href="#"
             ></a>
           </div>
         </ul>
       </nav>
-
-      <section class="bento-box mb-10 pt-10">
-        <div class="container">
-          <h4 class="text-sm font-semibold">BEST PLACE TO BUY COFFEE</h4>
-          <h1>Welcome To Kopikala</h1>
-          <p class="mb-4">
-            Lorem ipsum is simply dummy text of the printing and
-            <br />typesetting industry.
-          </p>
-          <div class="btn-explore">
-            <a href="#">Explore Our Products</a>
-          </div>
+      <!-- home section= start -->
+      <main>
+        <div class="landing-img"></div>
+        <div class="title text-center text-slate-50">
+          Harga Terjangkau, <br />
+          Kualitas Terjaga
         </div>
-      </section>
-
-      <section
-        class="coffee-gallery grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 h-[300px]"
-      >
-        <div class="gallery-item">
-          <img
-            src="img/img1.jpeg"
-            alt="Coffee Beans 1"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="img/img2.jpg"
-            alt="Coffee Beans 2"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="img/img3.jpg"
-            alt="Coffee Beans 3"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="img/img4.png"
-            alt="Coffee Beans 4"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <div class="gallery-item">
-          <img
-            src="img/img5.png"
-            alt="Coffee Beans 5"
-            class="w-full h-full object-cover"
-          />
-        </div>
-      </section>
+      </main>
+      <!-- home section end -->
     </header>
+
+    <!-- About us start -->
+    <section id="about">
+      <article>
+        <div class="text-center text-4xl">Kenalin, kami kopikala</div>
+        <br />
+        <p>
+          Nama "Kopikala" berasal dari dua kata sederhana, "kopi" dan <span>"kala," yang berarti "kopi pada saat itu"— </span> sebuah momen yang menyatukan kami
+          sebagai tim dalam proyek kewirausahaan, dengan satu <br> 
+          kesamaan: kecintaan pada kopi. <br /> <br>
+        </p>
+        <p>
+          Di Kopikala, kami percaya bahwa kopi bukan sekadar minuman. Kopi
+          adalah sumber energi dan inspirasi yang menghidupkan setiap momen.
+          Dengan komitmen kuat, kami menghadirkan kopi berkualitas tinggi <br> yang
+          terjangkau bagi siapa saja yang membutuhkan semangat ekstra.
+        </p>
+      </article>
+    </section>
+    <!-- about us end -->
 
     <!-- menu section start -->
     <section class="menu" id="menu">
