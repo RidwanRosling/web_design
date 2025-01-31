@@ -25,18 +25,18 @@ product.forEach((item) => {
   });
 });
 
-// Mobile Menu Toggle
-const hamburger = document.createElement("button");
-hamburger.className = "hamburger fa fa-bars";
-document.querySelector(".nav-list").appendChild(hamburger);
+// // Mobile Menu Toggle
+// const hamburger = document.createElement("button");
+// hamburger.className = "hamburger fa fa-bars";
+// document.querySelector(".nav-list").appendChild(hamburger);
 
-hamburger.addEventListener("click", () => {
-  document.querySelector(".nav-menu").classList.toggle("active");
-});
+// hamburger.addEventListener("click", () => {
+//   document.querySelector(".nav-menu").classList.toggle("active");
+// });
 
-// Close menu when clicking outside
-document.addEventListener("click", (e) => {
-  if (!e.target.closest(".nav-list")) {
-    document.querySelector(".nav-menu").classList.remove("active");
-  }
-});
+// // Close menu when clicking outside
+// document.addEventListener("click", (e) => {
+//   if (!e.target.closest(".nav-list")) {
+//     document.querySelector(".nav-menu").classList.remove("active");
+//   }
+// });

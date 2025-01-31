@@ -182,10 +182,11 @@ main {
 /* Style untuk section about us */
 #about {
   width: 100%;
+  height: 620px;
   display: flex;
   justify-content: center;
   background-color: #f4e7d1;
-  padding: 4rem 0;
+  padding-top: 8rem;
 }
 
 article {
@@ -259,118 +260,234 @@ article p {
   position: relative;
   overflow: hidden;
 }
-
 /* menu section end */
 
-/* responsive desgin */
-/* iPad (768px-1024px) */
-@media (max-width: 1024px) {
-  .title {
-    font-size: 4rem;
-  }
 
-  .nav-menu {
-    width: 35%;
-  }
+/* buyer gallery start */
 
-  .coffee-menu {
-    grid-template-rows: repeat(5, auto);
-  }
-
-  .menu {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .products {
-    padding: 2em 1em;
-  }
+.buyer-gallery{
+  width: 100%;
+  height: 110vh;
+  background-color: #f4e7d1;
+  /* overflow: auto; */
 }
 
-/* Mobile (up to 767px) */
-@media (max-width: 767px) {
-  .title {
-    font-size: 2.5rem;
-  }
 
-  #navbar {
-    padding-top: 0.5rem;
-    height: auto;
-  }
+.gallery-img{
+  margin-top: 2em;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(2,0.4fr);
+  grid-template-columns: 295px 295px 295px 250px 295px;
+  /* gap: 1em; */
+  place-items: center; 
+  background-color: #f4e7d1;
+  /* overflow-x: auto;
+  overflow-y: hidden;  */
 
-  .nav-list {
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 1rem;
-  }
+  /* overflow: auto; */
 
-  .home-logo {
-    margin-left: 0;
-    order: 1;
-  }
-
-  .nav-menu {
-    display: none;
-    width: 100%;
-    order: 4;
-    margin-top: 1rem;
-    border-radius: 10px;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .search-input-group {
-    order: 2;
-  }
-
-  .shoping-cart {
-    margin-right: 0;
-    order: 3;
-  }
-
-  .landing-img::before {
-    backdrop-filter: blur(2px);
-  }
-
-  .coffee-menu {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .coffee-menu h2 {
-    font-size: 3rem;
-  }
-
-  .product {
-    font-size: 1.5rem;
-    padding-right: 1em;
-  }
-
-  .menu {
-    flex-direction: column;
-  }
-
-  .foto-product {
-    height: 300px;
-  }
 }
 
-/* Hamburger Menu (Mobile Only) */
-.hamburger {
-  display: none;
+.b1c1{
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(-5deg);
+  /* place-items: center; */
 }
 
-@media (max-width: 767px) {
-  .hamburger {
-    display: block;
-    order: 4;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
+.b1c1 img{
+  padding: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
 }
-/* responsive design end */
+
+.b1c2{
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(10deg); 
+  /* place-items: center; */
+}
+
+.b1c2 img{
+  padding-bottom: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+.b1c3{
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(-5deg);
+  /* place-items: center; */
+}
+
+.b1c3 img{
+  padding-bottom: 10px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+.b1c4{
+  transform: rotate(-2deg);
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 250px;
+  height: 270px;
+  /* place-items: center; */
+}
+
+.b1c4 img{
+  padding: 10px;
+  width: 240px;
+  height: 245px;
+  object-fit: cover;
+}
+
+.b1c5{
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(7deg);
+  /* margin-right: 3em; */
+  /* place-items: center; */
+}
+
+.b1c5 img{
+  padding: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+.b2c1{
+  margin-top: -100px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(7deg);
+  /* margin-right: 3em; */
+  /* place-items: center; */
+}
+
+.b2c1 img{
+  padding: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+.b2c2{
+  z-index: 3;
+  margin-top: -100px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(7deg);
+  /* margin-right: 3em; */
+  /* place-items: center; */
+}
+
+.b2c2 img{
+  padding: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+.b2c3{
+  margin-top: -100px;
+  z-index: 5;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  transform: rotate(-3deg);
+  /* margin-right: 3em; */
+  /* place-items: center; */
+}
+
+.b2c3 img{
+  padding: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+
+.b2c4{
+  margin-top: -57px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 315px;
+  height: 200px;
+  /* margin-right: 3em; */
+  /* place-items: center; */
+}
+
+.b2c4 img{
+  padding: 5px;
+  width: 295px;
+  height: 175px;
+  object-fit: cover;
+}
+.b2c5{
+  z-index: 3;
+  margin-top: -40px;
+  display: grid;
+  place-items: center;
+  background-color: white;
+  width: 250px;
+  height: 290px;
+  transform: rotate(4deg);
+  /* margin-right: 3em; */
+  /* place-items: center; */
+}
+
+.b2c5 img{
+  padding: 5px;
+  width: 240px;
+  height: 245px;
+  object-fit: cover;
+}
+
+footer{
+  color: white;
+  background-color: #331702;
+  width: 100%;
+  height: 50vh;
+}
+
+/* untuk ladnscape size */
+/* background */
+/* widht 399.87, height: 319.61*/
+/* img */
+/* widht: 367.77, height: 230.58 */
+
+/* for potrait size */
+/* background */
+/* widht: 305.94, height: 373.63 */
+/* img */
+/* widht: 272.1, height: 273.45 */
+
+
+/* buyer gallery end */
