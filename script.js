@@ -1,6 +1,22 @@
 const product = document.querySelectorAll(".product");
-
 const fotoProduct = document.querySelector(".foto-product img");
+const heroElement = document.querySelector("section.hero")
+
+// navbar start
+const heroObserver = new IntersectionObserver(
+  (entries) => {
+    const [entry] = entries;
+
+    if(entry.isIntersecting){
+      document.querySelector("nav").classList.add("scrolled")
+    }else{
+      document.querySelector("nav").remove("scrolled")
+    }
+  }, {threshold : 0.9})
+
+heroObserver.observe(heroElement);
+// navbar end
+
 
 product.forEach((item) => {
   item.addEventListener("click", () => {
