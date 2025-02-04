@@ -20,11 +20,11 @@ nav {
   padding-top: 1rem;
   height: 55px;
   overflow: hidden;
-  background-color: brown;
 }
 
-
-
+.scrolled {
+  background-color: brown;
+}
 
 .nav-list {
   display: flex;

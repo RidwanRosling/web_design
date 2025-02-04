@@ -1,20 +1,17 @@
 const product = document.querySelectorAll(".product");
 const fotoProduct = document.querySelector(".foto-product img");
-const heroElement = document.querySelector("section.hero")
 
 // navbar start
-const heroObserver = new IntersectionObserver(
-  (entries) => {
-    const [entry] = entries;
+document.addEventListener("scroll", () => {
+  const nav = document.querySelector("nav")
 
-    if(entry.isIntersecting){
-      document.querySelector("nav").classList.add("scrolled")
-    }else{
-      document.querySelector("nav").remove("scrolled")
-    }
-  }, {threshold : 0.9})
-
-heroObserver.observe(heroElement);
+  if(window.scrollY > 0){
+    nav.classList.add("scrolled")
+  }
+  else{
+    nav.classList.remove("scrolled")
+  }
+})
 // navbar end
 
 
