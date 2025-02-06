@@ -3,17 +3,15 @@ const fotoProduct = document.querySelector(".foto-product img");
 
 // navbar start
 document.addEventListener("scroll", () => {
-  const nav = document.querySelector("nav")
+  const nav = document.querySelector("nav");
 
-  if(window.scrollY > 0){
-    nav.classList.add("scrolled")
+  if (window.scrollY > 0) {
+    nav.classList.add("scrolled");
+  } else {
+    nav.classList.remove("scrolled");
   }
-  else{
-    nav.classList.remove("scrolled")
-  }
-})
+});
 // navbar end
-
 
 product.forEach((item) => {
   item.addEventListener("click", () => {
