@@ -48,7 +48,7 @@ product.forEach((item) => {
 
     // Ambil nama produk berdasarkan class
     let namaProduk = "";
-    if (item.classList.contains("kopikala")) namaProduk = "kopikala.png";
+    if (item.classList.contains("kopikala")) namaProduk = "Kopikala.png";
     else if (item.classList.contains("susu-aren")) namaProduk = "susuAren.png";
     else if (item.classList.contains("kopi-susu")) namaProduk = "kopiSusu.png";
     else if (item.classList.contains("susu-pisang"))
