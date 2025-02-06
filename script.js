@@ -25,13 +25,13 @@ product.forEach((item) => {
     item.classList.add("text-black");
 
     if (item.classList.contains("kopikala")) {
-      fotoProduct.src = "/img/kopikala.png";
+      fotoProduct.src = "img/kopikala.png";
     } else if (item.classList.contains("susu-aren")) {
-      fotoProduct.src = "/img/susuAren.png";
+      fotoProduct.src = "img/susuAren.png";
     } else if (item.classList.contains("kopi-susu")) {
-      fotoProduct.src = "/img/kopiSusu.png";
+      fotoProduct.src = "img/kopiSusu.png";
     } else if (item.classList.contains("susu-pisang")) {
-      fotoProduct.src = "/img/susuPisang.png";
+      fotoProduct.src = "img/susuPisang.png";
     }
   });
 });
