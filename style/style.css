@@ -1,6 +1,4 @@
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -8,33 +6,6 @@
   margin: 0;
   padding: 0;
 }
-
-/* animation start */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* @keyframes appear {
-  from {
-    opacity: 0;
-    clip-path: inset(100% 100% 0 0);
-  }
-  to {
-    opacity: 1;
-    clip-path: inset(0 0 0 0);
-  }
-} */
-/* animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0 cover 40%; */
-/* animation end */
 
 header {
   height: 100vh;
@@ -47,25 +18,25 @@ nav {
   position: fixed;
   z-index: 10;
   padding-top: 1rem;
-  height: 65px;
+  height: 55px;
   overflow: hidden;
 
-  /* Nilai awal */
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+   /* Nilai awal */
+   opacity: 0;
+   transform: translateY(-20px);
+   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .scrolled {
   opacity: 1;
   transform: translateY(0);
-  background-color: rgb(67, 47, 22);
+  background-color: brown;
 }
 
 .nav-list {
   display: flex;
-  align-items: center; /* Menyelaraskan secara vertikal */
-  justify-content: space-between; /* (Opsional) untuk menyebarkan elemen secara horizontal */
+  align-items: center;       
+  justify-content: space-between; 
   width: 100%;
   height: 70%;
   position: relative;
@@ -74,7 +45,7 @@ nav {
 
 .home-logo {
   display: flex;
-  align-items: center; /* Tambahan untuk memastikan isi div diselaraskan */
+  align-items: center;
   justify-content: flex-start;
   margin-left: 4rem;
   width: 4rem;
@@ -83,32 +54,37 @@ nav {
 
 .home-logo img {
   transform: scale(2.5);
-  width: 100%; /* Membuat gambar mengisi container */
+  width: 100%; 
   height: auto; /* Menjaga aspect ratio */
   display: block; /* Menghilangkan space ekstra di bawah gambar */
 }
 
-.nav-menu {
+.nav-menu{
   display: flex;
   justify-content: flex-end;
   padding-right: 3.5em;
   gap: 3em;
 }
 
+
+
 /*  */
 /* landing page start */
 main {
   font-family: "Gloria Hallelujah", cursive;
+
+  display: flex;
 
   /* justify-content: center;
   align-items: center; */
 }
 
 .landing-img {
+  
   position: absolute;
   width: 100%;
   height: 100vh;
-  background: url("img/IMG_2158.JPG") center/cover no-repeat;
+  background: url("/img/IMG_2158.JPG") center/cover no-repeat;
 }
 
 .landing-img::before {
@@ -144,9 +120,8 @@ main {
   height: 620px;
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #f4e7d1;
-  /* padding-top: 4rem; */
+  padding-top: 8rem;
 }
 
 article {
@@ -180,6 +155,7 @@ article p {
   /* padding: 1em; */
   display: flex;
 }
+
 
 .foto-product {
   display: flex;
@@ -234,9 +210,10 @@ article p {
 }
 /* menu section end */
 
+
 /* buyer gallery start */
 
-.buyer-gallery {
+.buyer-gallery{
   font-family: "Gloria Hallelujah", cursive;
 
   width: 100%;
@@ -245,24 +222,27 @@ article p {
   /* overflow: auto; */
 }
 
-.gallery-img {
+
+.gallery-img{
   margin-top: 2em;
   /* border: 1px solid black; */
   width: 100%;
   height: 100vh;
   display: grid;
-  grid-template-rows: repeat(2, 0.4fr);
+  grid-template-rows: repeat(2,0.4fr);
   grid-template-columns: 300px 310px 310px 290px 310px;
   /* gap: 1em; */
-  place-items: center;
+  place-items: center; 
   background-color: #f4e7d1;
   /* overflow-x: auto;
   overflow-y: hidden;  */
 
   /* overflow: auto; */
+
 }
 
-.b1c1 {
+.b1c1{
+
   display: grid;
   place-items: center;
   background-color: white;
@@ -272,31 +252,31 @@ article p {
   /* place-items: center; */
 }
 
-.b1c1 img {
+.b1c1 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 210px;
   object-fit: cover;
 }
 
-.b1c2 {
+.b1c2{
   z-index: 5;
   display: grid;
   place-items: center;
   background-color: white;
   width: 340px;
   height: 230px;
-  transform: rotate(10deg);
+  transform: rotate(10deg); 
   /* place-items: center; */
 }
 
-.b1c2 img {
+.b1c2 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 210px;
   object-fit: cover;
 }
-.b1c3 {
+.b1c3{
   display: grid;
   place-items: center;
   background-color: white;
@@ -306,13 +286,13 @@ article p {
   /* place-items: center; */
 }
 
-.b1c3 img {
+.b1c3 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 210px;
   object-fit: cover;
 }
-.b1c4 {
+.b1c4{
   transform: rotate(-2deg);
   z-index: 3;
   display: grid;
@@ -323,14 +303,14 @@ article p {
   /* place-items: center; */
 }
 
-.b1c4 img {
+.b1c4 img{
   padding: 5px 5px 20px 5px;
   width: 260px;
   height: 260px;
   object-fit: cover;
 }
 
-.b1c5 {
+.b1c5{
   display: grid;
   place-items: center;
   background-color: white;
@@ -341,13 +321,13 @@ article p {
   /* place-items: center; */
 }
 
-.b1c5 img {
+.b1c5 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 220px;
   object-fit: cover;
 }
-.b2c1 {
+.b2c1{
   margin-top: -100px;
   display: grid;
   place-items: center;
@@ -359,13 +339,13 @@ article p {
   /* place-items: center; */
 }
 
-.b2c1 img {
+.b2c1 img{
   padding: 15px 5px 45px 5px;
   width: 270px;
   height: 260px;
   object-fit: cover;
 }
-.b2c2 {
+.b2c2{
   z-index: 3;
   margin-top: -150px;
   display: grid;
@@ -378,13 +358,13 @@ article p {
   /* place-items: center; */
 }
 
-.b2c2 img {
+.b2c2 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 210px;
   object-fit: cover;
 }
-.b2c3 {
+.b2c3{
   margin-top: -100px;
   z-index: 5;
   display: grid;
@@ -397,14 +377,14 @@ article p {
   /* place-items: center; */
 }
 
-.b2c3 img {
+.b2c3 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 210px;
   object-fit: cover;
 }
 
-.b2c4 {
+.b2c4{
   margin-top: -5.2em;
   display: grid;
   place-items: center;
@@ -415,13 +395,13 @@ article p {
   /* place-items: center; */
 }
 
-.b2c4 img {
+.b2c4 img{
   padding: 5px 5px 20px 5px;
   width: 340px;
   height: 210px;
   object-fit: cover;
 }
-.b2c5 {
+.b2c5{
   z-index: 3;
   margin-top: -40px;
   display: grid;
@@ -434,90 +414,63 @@ article p {
   /* place-items: center; */
 }
 
-.b2c5 img {
+.b2c5 img{
   padding: 5px 5px 39px 5px;
   width: 260px;
   height: 260px;
   object-fit: cover;
 }
 
-footer {
+footer{
   font-family: "Gloria Hallelujah", cursive;
 
-  padding-top: 1rem;
+  padding-top: 2rem;
   color: white;
-  /* background-color: #331702; */
-  background-color: darkgray;
+  background-color: #331702;
   width: 100%;
   height: 50vh;
 }
 
-.footer-container {
+.footer-container{
   width: 100%;
   display: grid;
-  place-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-place-items: center;
+  grid-template-columns: repeat(3,1fr);
 }
 
-.footer-logo {
+.footer-logo{
   justify-self: center;
-  width: 60%;
-  height: 80%;
+  width: 70%;
+  height: auto;
 }
 
-.footer-logo img {
+.footer-logo img{
   width: 80%;
   height: auto;
 }
 
-.menu-footer {
+.menu-footer{
   width: 100%;
-  height: 100%;
   display: flex;
   justify-content: center;
   line-height: 2.7rem;
 }
 
-.menu-footer li {
+.menu-footer li{
   padding-top: 1em;
 }
 
+
 .media-soial {
   place-items: center;
-  width: 100%;
-  height: 78%;
+  padding-top: 1.5em;
+  width: 100%;             
 }
 
-.social-icon {
+.social-icon{
   margin-top: 0.5em;
   display: flex;
-  gap: 1em;
+  justify-content: flex-start;
+  gap: 1.3em;
   font-size: 30px;
 }
-
-/* .home-logo {
-  margin-left: 4rem;
-  width: 4rem;
-  flex-shrink: 0;
-} */
-
-/* .home-logo img {
-  transform: scale(1.5);
-  width: 100%; 
-  height: auto;
-  display: block; 
-} */
-
-/* untuk ladnscape size */
-/* background */
-/* widht 399.87, height: 319.61*/
-/* img */
-/* widht: 367.77, height: 230.58 */
-
-/* for potrait size */
-/* background */
-/* widht: 305.94, height: 373.63 */
-/* img */
-/* widht: 272.1, height: 273.45 */
-
-/* buyer gallery end */
