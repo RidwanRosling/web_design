@@ -55,9 +55,5 @@ product.forEach((item) => {
       namaProduk = "susuPisang.png";
 
     // Ubah gambar tanpa mengubah path awalnya
-    if (namaProduk) {
-      fotoProduct.src = fotoProduct.src.replace(/[^/]+$/, namaProduk);
-      console.log("Gambar berubah ke:", fotoProduct.src); // Debugging
-    }
   });
 });
