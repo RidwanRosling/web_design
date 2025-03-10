@@ -54,6 +54,8 @@ product.forEach((item) => {
     else if (item.classList.contains("susu-pisang"))
       namaProduk = "susuPisang.png";
 
-    // Ubah gambar tanpa mengubah path awalnya
+    if (namaProduk) {
+      fotoProduct.src = `src/img/${namaProduk}`;
+    }
   });
 });

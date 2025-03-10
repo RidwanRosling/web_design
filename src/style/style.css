@@ -24,14 +24,11 @@ nav {
   overflow: hidden;
 
   /* Nilai awal */
-  opacity: 0;
-  transform: translateY(-20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
 .scrolled {
   opacity: 1;
-  transform: translateY(0);
   background-color: rgb(57, 20, 5);
 }
 
@@ -68,6 +65,12 @@ nav {
   gap: 3em;
 }
 
+.nav-menu li a:hover {
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  background-color: #fff;
+  color: #331702;
+  transition: background-color 0.7s ease, transform 0.4s ease;
+}
 /*  */
 /* landing page start */
 main {
