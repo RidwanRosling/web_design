@@ -11,30 +11,6 @@ document.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
-// navbar end
-
-// product.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     product.forEach((item) => {
-//       // item.classList.remove("#FFE8B6");
-//       item.classList.remove("bg-lightBrown");
-//       item.classList.remove("text-black");
-//       item.classList.add("text-slate-50");
-//     });
-//     item.classList.add("bg-lightBrown");
-//     item.classList.add("text-black");
-
-//     if (item.classList.contains("kopikala")) {
-//       fotoProduct.src = "img/kopikala.png";
-//     } else if (item.classList.contains("susu-aren")) {
-//       fotoProduct.src = "img/susuAren.png";
-//     } else if (item.classList.contains("kopi-susu")) {
-//       fotoProduct.src = "img/kopiSusu.png";
-//     } else if (item.classList.contains("susu-pisang")) {
-//       fotoProduct.src = "img/susuPisang.png";
-//     }
-//   });
-// });
 product.forEach((item) => {
   item.addEventListener("click", () => {
     console.log("Menu diklik:", item.classList); // Debugging
