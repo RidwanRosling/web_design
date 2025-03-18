@@ -11,6 +11,17 @@ document.addEventListener("scroll", () => {
     nav.classList.remove("scrolled");
   }
 });
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+  const x = document.querySelector(".nav-menu"); // Directly selects the element
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
 product.forEach((item) => {
   item.addEventListener("click", () => {
     console.log("Menu diklik:", item.classList); // Debugging

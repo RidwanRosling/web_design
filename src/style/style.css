@@ -473,3 +473,70 @@ footer {
   gap: 1.3em;
   font-size: 30px;
 }
+
+@media only screen and (max-width: 3000px) and (min-width: 710px) {
+  /* Gaya CSS khusus untuk perangkat dengan lebar maksimum 480px */
+  .humberger-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  /* navbar section */
+  nav {
+    height: 4em;
+  }
+
+  .nav-list {
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease;
+  }
+
+  .nav-list.active {
+    right: 0;
+  }
+
+  .nav-menu {
+    display: none;
+    /* padding-right: 3.5em; */
+    /* gap: 3em; */
+  }
+
+  .nav-menu li a:hover {
+    padding: 0em 0em 0em 0em;
+    background-color: #fff;
+    color: #331702;
+    transition: background-color 0.7s ease, transform 0.4s ease;
+  }
+
+  .topnav a {
+    color: white;
+    /* padding: 14px 16px; */
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  /* Style navigation menu links */
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  /* Style the hamburger menu */
+
+  /* Style the active link (or home/logo) */
+}
